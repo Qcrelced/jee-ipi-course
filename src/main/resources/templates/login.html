@@ -1,0 +1,5 @@
+<form method="post" th:action="@{/loginSubmit}" th:object="${user}">
+    <p>Login: <input th:field="*{login}" type="text" /></p>
+    <p>Password: <input th:field="*{password}" type="password" /></p>
+    <p><input type="submit" value="Submit" /></p>
+</form>

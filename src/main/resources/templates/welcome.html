@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Boot Thymeleaf Example</title>
+    <link href="/css/main.css" rel="stylesheet"/>
+</head>
+<body>
+<h1 th:text="${bonjour} + ' ' + ${student.getName()}"></h1>
+<ol>
+    <li th:each="students : ${students}" th:text="${students.getName()} + ':' + ${students.getNote()}"> </li>
+</ol>
+
+</body>
+</html>
