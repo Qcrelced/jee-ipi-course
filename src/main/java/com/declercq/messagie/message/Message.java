@@ -17,4 +17,7 @@ public class Message {
     private Long id;
     private String pseudo;
     private String message;
+
+    public Message(String supportTeam, String s) {
+    }
 }

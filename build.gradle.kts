@@ -36,6 +36,12 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-validation")
     //Permet à JAVA de se connecter à une base SQL
     runtimeOnly("com.h2database:h2")
+    implementation("org.springframework.boot:spring-boot-starter-websocket")
+    implementation("org.springframework.boot:spring-boot-starter-security")
+    implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
+    runtimeOnly("com.h2database:h2")
+    runtimeOnly("io.r2dbc:r2dbc-h2")
+
 
 //JPA Framework Java qui génère du SQL
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
