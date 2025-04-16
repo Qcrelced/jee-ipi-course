@@ -1,5 +1,6 @@
 package com.declercq.reactive;
 
+
 import io.r2dbc.spi.ConnectionFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

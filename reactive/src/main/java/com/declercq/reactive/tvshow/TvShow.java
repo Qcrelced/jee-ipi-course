@@ -1,10 +1,9 @@
 package com.declercq.reactive.tvshow;
 
-
+import jakarta.persistence.Table;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.relational.core.mapping.Table;
 
-@Table
+@Table(name = "tv_show")
 public class TvShow {
 
     @Id // Indique la clé primaire
@@ -12,6 +11,4 @@ public class TvShow {
     private String name;
     private String genre;
     private Integer seasons;
-
-    //GETTER Setter
 }

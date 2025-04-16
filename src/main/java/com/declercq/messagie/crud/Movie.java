@@ -11,11 +11,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="user")
-public class User {
+@Table(name = "movie")
+public class Movie {
 
     @Id
-    private Long id;
-    private String login;
-    private String password;
+    private long id;
+    private String title;
+    private int lenght;
+
 }

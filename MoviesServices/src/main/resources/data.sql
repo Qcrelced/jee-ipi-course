@@ -1,0 +1,10 @@
+INSERT INTO movie (id, title, lenght) VALUES (1, 'Inception', 148);
+INSERT INTO movie (id, title, lenght) VALUES (2, 'The Matrix', 136);
+INSERT INTO movie (id, title, lenght) VALUES (3, 'Interstellar', 169);
+INSERT INTO movie (id, title, lenght) VALUES (4, 'The Godfather', 175);
+INSERT INTO movie (id, title, lenght) VALUES (5, 'Pulp Fiction', 154);
+INSERT INTO movie (id, title, lenght) VALUES (6, 'The Dark Knight', 152);
+INSERT INTO movie (id, title, lenght) VALUES (7, 'Fight Club', 139);
+INSERT INTO movie (id, title, lenght) VALUES (8, 'Forrest Gump', 142);
+INSERT INTO movie (id, title, lenght) VALUES (9, 'The Shawshank Redemption', 142);
+INSERT INTO movie (id, title, lenght) VALUES (10, 'Gladiator', 155);

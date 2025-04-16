@@ -1,8 +1,10 @@
 package com.declercq.messagie.crud;
 
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 
@@ -20,42 +22,7 @@ public class StudentController {
     public ResponseEntity<User> getUserById(@PathVariable Long id){
         User user = new User();
         user = UserService.findById(id);
-        if (user != null){
-            return ResponseEntity.ok(user);
-        }
         return null;
-    }
-
-    @PostMapping("/post{login}and{password}")
-    public HttpStatus CreatUser(@PathVariable String login,
-                                @PathVariable String password){
-        User user = new User(null, login, password);
-        UserService.save(user);
-        return HttpStatus.CREATED;
-    }
-
-    @PutMapping("/users/{id}by{newid}")
-    public HttpStatus getUserById(@PathVariable long id,
-                                  @PathVariable long newid){
-        User user = new User();
-        user = UserService.findById(id);
-        if (user != null){
-            user.setId(newid);
-            UserService.save(user);
-            return HttpStatus.OK;
-        }
-        return HttpStatus.NOT_FOUND;
-    }
-
-    @DeleteMapping("/users/delete/{id}")
-    public ResponseEntity<User> deleteUser(@PathVariable long id){
-        User user = new User();
-        user = UserService.findById(id);
-        if (user != null){
-            user.setId(id);
-        }
-        UserService.deleteById(id);
-        return ResponseEntity.ok(user);
     }
 
 }

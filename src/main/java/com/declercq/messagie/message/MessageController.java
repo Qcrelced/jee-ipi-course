@@ -18,10 +18,10 @@ public class MessageController {
     @Autowired
     private MessageService messageService;
 
-    @GetMapping("/get-message")
-    public Message getMessage(@RequestParam(value = "id") int id) {
-        return messageService.findById(id);
-    }
+//    @GetMapping("/get-message")
+//    public Message getMessage(@RequestParam(value = "id") int id) {
+//        return messageService.findById(id);
+//    }
 
     @PostMapping("/saveMessage")
     public void saveMessage(@RequestBody Message message) {
